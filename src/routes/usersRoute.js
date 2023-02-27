@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const authenticator = require('../../m')
+const authenticator = require('../../middlewares/authMiddleware')
 
 router.get('/register', authenticator, (req, res) => {
 
